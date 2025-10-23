@@ -6,7 +6,7 @@ let tentativas = 1;
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female',{rate:1.1});
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female',{rate:1.0});
 }
 
 function exibirMensagemInicial(){
@@ -75,4 +75,5 @@ function reiniciarJogo(){
     tentativas = 1;
     exibirMensagemInicial();
     document.getElementById('reiniciar').setAttribute('disabled',true);
+
 }
